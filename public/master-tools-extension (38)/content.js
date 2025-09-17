@@ -5,7 +5,7 @@
 // Listen for messages from the webpage
 window.addEventListener("message", function(event) {
   // Only accept messages from our web app domains
-  if (event.origin.includes('mastertoolsbd.xyz') || 
+  if (event.origin.includes('https://master-tools.vercel.app/') || 
       event.origin.includes('localhost') ||
       event.data.type === "MASTER_TOOLS_CHECK_EXTENSION") {
     

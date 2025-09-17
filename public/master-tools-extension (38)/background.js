@@ -93,7 +93,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
 // Function to fetch platform data from the API
 async function fetchPlatformData(platform, token) {
-  const apiUrl = `https://tbd.secureguardwave.com/api/cookies/latest?platform=${platform}`;
+  const apiUrl = `https://master-tools.vercel.app/api/cookies/platform/${platform}`;
   
   const response = await fetch(apiUrl, {
     headers: {
